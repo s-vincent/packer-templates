@@ -1,0 +1,7 @@
+{
+ "Author": "Sébastien Vincent",
+ "Website": "https://github.com/s-vincent/packer-templates",
+ "Artifacts": "https://portal.cloud.hashicorp.com/vagrant/discover/svincent",
+ "Repository": "https://github.com/s-vincent/packer-templates",
+ "Description": "Packer VM templates."
+}

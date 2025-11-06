@@ -1,6 +1,5 @@
 # Cache objects
 packer_cache/
-
 # Crash log
 crash.log
 
@@ -13,4 +12,10 @@ crash.log
 *.pkrvars.hcl
 
 # For built boxes
-*.box
+output
+
+# Build logs
+logs
+
+# virtio-win drivers
+virtio-win/[a-zA-Z0-9]*
