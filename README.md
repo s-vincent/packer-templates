@@ -30,12 +30,13 @@ Examples:
 
 We propose following GNU/Linux distributions:
 - Debian 13;
+- AlmaLinux 9;
 - AlmaLinux 10.
 
 ## Windows templates
 
 We propose following Windows OS:
-- Windows 11 25H2.
+- Windows 11 Pro 25H2.
 
 Notes:
 - for libvirt build, copy virtio-win ISO files to virtio-win/ directory;

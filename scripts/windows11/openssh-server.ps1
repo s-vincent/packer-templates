@@ -14,7 +14,6 @@ icacls.exe $env:ProgramData\ssh\administrators_authorized_keys /inheritance:r /g
 #New-Item -Force -ItemType Directory -Path C:\Users\Vagrant\.ssh
 #Add-Content -Force -Path C:\Users\Vagrant\.ssh\authorized_keys -Value "$authorizedKey"
 
-# Modify rule to allow SSH in any profile (public, private and domain)
-#netsh.exe advfirewall firewall set rule name="OpenSSH SSH Server (sshd)" new profile=any
-netsh.exe advfirewall firewall set rule name="OpenSSH SSH Server Preview (sshd)" new profile=any
+# Adds rule to allow SSH in any profile (public, private and domain)
+netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22 profile=any
 
