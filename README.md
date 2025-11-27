@@ -16,7 +16,7 @@ Use `extra/install_plugins.sh` to install the required ones.
 
 ## Usage
 
-./build.sh <os-hypervisor>
+./build.sh OS-hypervisor
 
 Examples:
 

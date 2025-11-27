@@ -10,7 +10,7 @@ then
 fi
 
 if [ ! -n "$BOX_VERSION" ]; then
-  export BOX_VERSION="1.0.0"
+  export BOX_VERSION="1.1.0"
 fi
 
 IMAGE=$1

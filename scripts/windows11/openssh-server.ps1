@@ -2,7 +2,7 @@ $ProgressPreference = 'SilentlyContinue'
 
 # Install OpenSSH server
 #Add-WindowsCapability -Online -Name OpenSSH.Server
-msiexec.exe /qn /i "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.8.3.0p2-Preview/OpenSSH-Win64-v9.8.3.0.msi"
+msiexec.exe /qn /i "https://github.com/PowerShell/Win32-OpenSSH/releases/download/10.0.0.0p2-Preview/OpenSSH-Win64-v10.0.0.0.msi"
 
 Start-Service sshd
 Set-Service -Name sshd -StartupType Automatic

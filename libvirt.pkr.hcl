@@ -31,8 +31,8 @@ source "qemu" "alma10-libvirt" {
   format                 = "qcow2"
   headless               = true
   http_directory         = "http"
-  iso_checksum           = "sha256:a1549729bfb66a28e3546c953033c9928eae7280917bb1c490983dba3bb9941c"
-  iso_url                = "https://dfw.mirror.rackspace.com/almalinux/10.0/isos/x86_64/AlmaLinux-10.0-x86_64-boot.iso"
+  iso_checksum           = "sha256:68a9e14fa252c817d11a3c80306e5a21b2db37c21173fd3f52a9eb6ced25a4a0"
+  iso_url                = "https://dfw.mirror.rackspace.com/almalinux/10.1/isos/x86_64/AlmaLinux-10.1-x86_64-boot.iso"
   memory                 = 2048
   net_device             = "virtio-net"
   output_directory       = "output/alma10-libvirt"
@@ -93,8 +93,8 @@ source "qemu" "debian13-libvirt" {
   format                 = "qcow2"
   headless               = true
   http_directory         = "http"
-  iso_checksum           = "sha256:658b28e209b578fe788ec5867deebae57b6aac5fce3692bbb116bab9c65568b3"
-  iso_url                = "https://cdimage.debian.org/cdimage/release/13.1.0/amd64/iso-cd/debian-13.1.0-amd64-netinst.iso"
+  iso_checksum           = "sha256:677c4d57aa034dc192b5191870141057574c1b05df2b9569c0ee08aa4e32125d"
+  iso_url                = "https://cdimage.debian.org/cdimage/release/13.2.0/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso"
   memory                 = 2048
   net_device             = "virtio-net"
   output_directory       = "output/debian13-libvirt"
@@ -129,8 +129,8 @@ source "qemu" "windows11-libvirt" {
   format                 = "qcow2"
   headless               = false
   http_directory         = "http"
-  iso_checksum           = "sha256:0e736fd016778529c540e7064f53ce88c380ac7c6b3e3ce3eadb3a9887d7e6b2"
-  iso_url                = "/var/lib/libvirt/images/iso/fr-fr_windows_11_business_editions_version_25h2_x64_dvd_f18ebec2.iso"
+  iso_checksum           = "sha256:ba7928055cc68266f741629a78afb9acfbd8f469cea3f3fb3348091f2f342062"
+  iso_url                = "/var/lib/libvirt/images/iso/fr-fr_windows_11_business_editions_version_25h2_updated_nov_2025_x64_dvd_6f8d8df4.iso"
   machine_type           = "q35"
   memory                 = 4096
   net_device             = "virtio-net"
