@@ -5,12 +5,12 @@ set -e
 if [ $# -lt 1 ]
 then
   echo "Usage: $0 template"
-  echo "Example: $0 generic-debian13-libvirt"
+  echo "Example: $0 debian13-libvirt"
   exit 1
 fi
 
 if [ ! -n "$BOX_VERSION" ]; then
-  export BOX_VERSION="1.1.0"
+  export BOX_VERSION="1.2.0"
 fi
 
 IMAGE=$1

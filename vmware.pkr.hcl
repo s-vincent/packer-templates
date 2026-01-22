@@ -64,8 +64,8 @@ source "vmware-iso" "alma9-vmware" {
   guest_os_type          = "centos-64"
   headless               = true
   http_directory         = "http"
-  iso_checksum           = "sha256:113521ec7f28aa4ab71ba4e5896719da69a0cc46cf341c4ebbd215877214f661"
-  iso_url                = "https://dfw.mirror.rackspace.com/almalinux/9.6/isos/x86_64/AlmaLinux-9.6-x86_64-boot.iso"
+  iso_checksum           = "sha256:494d09f608b325ef42899b5ce38ba1b17755a639f5558b9b98a031b0696e694a"
+  iso_url                = "https://dfw.mirror.rackspace.com/almalinux/9.7/isos/x86_64/AlmaLinux-9.7-x86_64-boot.iso"
   memory                 = 2048
   output_directory       = "output/alma9-vmware"
   shutdown_command       = "echo 'vagrant' | sudo -S shutdown -P now"
@@ -102,8 +102,8 @@ source "vmware-iso" "debian13-vmware" {
   guest_os_type          = "debian12-64"
   headless               = true
   http_directory         = "http"
-  iso_checksum           = "sha256:677c4d57aa034dc192b5191870141057574c1b05df2b9569c0ee08aa4e32125d"
-  iso_url                = "https://cdimage.debian.org/cdimage/release/13.2.0/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso"
+  iso_checksum           = "sha256:c9f09d24b7e834e6834f2ffa565b33d6f1f540d04bd25c79ad9953bc79a8ac02"
+  iso_url                = "https://cdimage.debian.org/cdimage/release/13.3.0/amd64/iso-cd/debian-13.3.0-amd64-netinst.iso"
   memory                 = 2048
   output_directory       = "output/debian13-vmware"
   shutdown_command       = "echo 'vagrant' | sudo -S shutdown -P now"

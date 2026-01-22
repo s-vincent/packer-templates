@@ -32,12 +32,6 @@ retry() {
 export DEBIAN_FRONTEND=noninteractive
 export DEBCONF_NONINTERACTIVE_SEEN=true
 
-# Disable IPv6 for the current boot.
-sysctl net.ipv6.conf.all.disable_ipv6=1
-
-# Ensure IPv6 stays disabled.
-printf "\nnet.ipv6.conf.all.disable_ipv6 = 1\n" >> /etc/sysctl.conf
-
 # Set the hostname, and then ensure it will resolve properly.
 printf "debian13.localdomain\n" > /etc/hostname
 printf "\n127.0.0.1 debian13.localdomain\n\n" >> /etc/hosts
