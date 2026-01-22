@@ -93,7 +93,7 @@ source "vmware-iso" "alma9-vmware" {
 }
 
 source "vmware-iso" "debian13-vmware" {
-  boot_command           = ["<esc><wait><esc><wait><esc><wait><esc><wait><esc><wait><esc><wait>", "/install.amd/vmlinuz auto=true priority=critical vga=788 initrd=/install.amd/gtk/initrd.gz --- quiet ", "ipv6.disable_ipv6=1 net.ifnames=0 biosdevname=0 preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/debian13.cfg ", "<enter>"]
+  boot_command           = ["<esc><wait><esc><wait><esc><wait><esc><wait><esc><wait><esc><wait>", "/install.amd/vmlinuz auto=true priority=critical vga=788 initrd=/install.amd/gtk/initrd.gz --- quiet ", "net.ifnames=0 biosdevname=0 preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/debian13.cfg ", "<enter>"]
   boot_keygroup_interval = "1s"
   boot_wait              = "10s"
   cpus                   = 2

@@ -11,7 +11,7 @@ clearpart --all --initlabel
 autopart --type=lvm --nohome
 
 firewall --enabled --service=ssh
-network --device eth0 --bootproto dhcp --noipv6 --hostname=alma10.localdomain
+network --device eth0 --bootproto dhcp --hostname=alma10.localdomain
 bootloader --timeout=1 --append="net.ifnames=0 biosdevname=0 no_timer_check nomodeset text"
 
 # repo --name=BaseOS
